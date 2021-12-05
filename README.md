@@ -3,7 +3,7 @@ GraphQL apollo-server agensgraph 와 연동하기 (Demo)
 
 apllo-server 를 이용해 Graphql 서버를 만들고 agensgraph 에 데이터 베이스를 저장 할 수 있도록 연동 해 보았습니다.
 # How to start
-### 1. 테스트 DB 구축하기  Test environment database build 
+### 1. 테스트 DB 구축하기 Database build for test environment
 ````
 docker run --name localagens -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d bitnine/agensgraph:latest 
 ````
