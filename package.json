@@ -1,0 +1,25 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "my first graphql server",
+  "main": "index.js",
+  "author": "Hanbyeol Shin",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec babel-node --es-module-specifier-resolution=node ./src/index.js"
+  },
+  "dependencies": {
+    "@bitnine-oss/ag-driver": "^0.1.0",
+    "apollo-server": "^3.5.0",
+    "graphql": "^16.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3"
+  }
+}
