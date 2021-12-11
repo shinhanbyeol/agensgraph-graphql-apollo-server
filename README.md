@@ -13,6 +13,8 @@ docker run --name localagens -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d bitni
 ````
 create graph movie;
 
+set graph_path = movie;
+
 CREATE (n:movie {name:'The Matrix', rating:10});
 CREATE (n:movie {name:'Spider Man:', rating:9}); 
 CREATE (n:movie {name:'Kill Bill', rating:9});
