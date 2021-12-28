@@ -1,4 +1,4 @@
-import connection from './agensGraphRepository';
+import connection from '../agensGraphRepository';
 
 const scheme = 'movie'
 

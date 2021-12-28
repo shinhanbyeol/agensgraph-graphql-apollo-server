@@ -1,4 +1,4 @@
-import { movie, movies, createMovie } from '../database/movie';
+import { movie, movies, createMovie } from '../database/vertices/movie';
 
 const resolvers = {
   Query: {
