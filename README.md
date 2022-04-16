@@ -15,11 +15,22 @@ create graph movie;
 
 set graph_path = movie;
 
-CREATE (n:movie {name:'The Matrix', rating:10});
-CREATE (n:movie {name:'Spider Man:', rating:9}); 
-CREATE (n:movie {name:'Kill Bill', rating:9});
-CREATE (n:movie {name:'Good Will Hunting', rating:10});
-CREATE (n:movie {name:'Fight Club', rating:9}); 
+CREATE (m1:movie {name:'The Matrix', rating:10});
+CREATE (m2:movie {name:'Spider Man:', rating:9}); 
+CREATE (m3:movie {name:'Kill Bill', rating:9});
+CREATE (m4:movie {name:'Good Will Hunting', rating:10});
+CREATE (m5:movie {name:'Fight Club', rating:9});
+create (r1: Review { reviewer: 'person1', review: 'good movie!', rating: 10})
+create (r2: Review { reviewer: 'person2', review: '좋은 영화네요!', rating: 10})
+create (r3: Review { reviewer: 'person3', review: '재밌어요!!', rating: 9})
+create (r4: Review { reviewer: 'person4', review: '또보고 싶어요', rating: 9})
+create (r5: Review { reviewer: 'person5', review: 'Wow fantastic', rating: 10})
+create
+(m1)<-[:reviewed]-(r1),
+(m2)<-[:reviewed]-(r2),
+(m3)<-[:reviewed]-(r3),
+(m4)<-[:reviewed]-(r4),
+(m5)<-[:reviewed]-(r5)
 ````
 
 ### 3. module install
