@@ -15,11 +15,11 @@ create graph movie;
 
 set graph_path = movie;
 
-CREATE (m1:movie {name:'The Matrix', rating:10});
-CREATE (m2:movie {name:'Spider Man:', rating:9}); 
-CREATE (m3:movie {name:'Kill Bill', rating:9});
-CREATE (m4:movie {name:'Good Will Hunting', rating:10});
-CREATE (m5:movie {name:'Fight Club', rating:9});
+CREATE (m1:movie {name:'The Matrix', rating:10})
+CREATE (m2:movie {name:'Spider Man:', rating:9})
+CREATE (m3:movie {name:'Kill Bill', rating:9})
+CREATE (m4:movie {name:'Good Will Hunting', rating:10})
+CREATE (m5:movie {name:'Fight Club', rating:9})
 create (r1: Review { reviewer: 'person1', review: 'good movie!', rating: 10})
 create (r2: Review { reviewer: 'person2', review: '좋은 영화네요!', rating: 10})
 create (r3: Review { reviewer: 'person3', review: '재밌어요!!', rating: 9})
