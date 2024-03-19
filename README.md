@@ -5,7 +5,7 @@ apllo-server 를 이용해 Graphql 서버를 만들고 agensgraph 에 데이터 
 # How to start
 ### 1. 테스트 DB 구축하기 Database build for test environment
 ````
-docker run --name localagens -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d bitnine/agensgraph:latest 
+docker run -d --name agens-graph -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d bitnine/agensgraph:v2.13.0
 ````
 
 
@@ -16,7 +16,7 @@ create graph movie;
 set graph_path = movie;
 
 CREATE (m1:movie {name:'The Matrix', rating:10})
-CREATE (m2:movie {name:'Spider Man:', rating:9})
+CREATE (m2:movie {name:'Spider Man', rating:9})
 CREATE (m3:movie {name:'Kill Bill', rating:9})
 CREATE (m4:movie {name:'Good Will Hunting', rating:10})
 CREATE (m5:movie {name:'Fight Club', rating:9})
